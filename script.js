@@ -23,7 +23,6 @@ function multiply (num1, num2) {
 function divide (num1, num2) {
     return (`${num1} division ${num2} equals ${num1/num2}`);
    
-
 }
 
 console.log("Welcome to the Magic Calculator !");
@@ -54,6 +53,19 @@ while(userWantsToContinue){
     }
 }
 
+
+// Magical operation function 
+
+function magicOperation(num) {
+    switch(true) {
+        case num < 10:
+            return "Magic dust makes the number grow:" + (num*10);
+        case num >= 10 && num <= 100:
+            return "A Magic gnome double the number: " + (num*2);
+        default: 
+            return " The number is too mighty for magic and remains unchanged.";
+    }
+}
 
 
 
